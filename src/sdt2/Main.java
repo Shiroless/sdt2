@@ -25,21 +25,7 @@ public class Main {
         }
         
         Random rand = new Random();
-        int[] grill = new int[f1drivers.length];
-        
-        for (int i = 0; i < grill.length; i++) {
-            int randpos;
-            do randpos = rand.nextInt(f1drivers.length) + 1; while (existpos(grill, randpos));
-            grill[i] = randpos;
-        }
-
-        System.out.println("final grill:");
-        for (int i = 0; i < f1drivers.length; i++)
-            System.out.println("Spot " + grill[i] + ": " + f1drivers[i]);
-    }
-
-    public static boolean existpos(int[] grill, int pos) {
-        for (int p : grill) if (p == pos) return true;
-        return false;
+        int i = rand.nextInt(f1drivers.length);
+        System.out.println("Driver selected: " + f1drivers[i]);
     }
 }
