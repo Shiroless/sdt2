@@ -1,5 +1,6 @@
 package sdt2;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -17,6 +18,12 @@ public class Main {
             "Carlos Sainz"
         };
 
+        Arrays.sort(f1drivers);
+        System.out.println("List of drivers");
+        for (String driver : f1drivers) {
+            System.out.println(driver);
+        }
+        
         Random rand = new Random();
         int i = rand.nextInt(f1drivers.length);
         System.out.println("Driver selected: " + f1drivers[i]);
