@@ -14,8 +14,7 @@ public class Main {
             "Lando Norris",
             "Daniel Ricciardo",
             "Fernando Alonso",
-            "Sebastian Vettel",
-            "Carlos Sainz"
+            "Sebastian Vettel"
         };
 
         Arrays.sort(f1drivers);
